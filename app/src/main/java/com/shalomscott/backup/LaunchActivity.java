@@ -40,7 +40,7 @@ public class LaunchActivity extends Activity implements DriveUtils.OnConnectList
         setContentView(R.layout.activity_setting);
 
         setActionBar((Toolbar) findViewById(R.id.toolbar));
-        getActionBar().setDisplayShowTitleEnabled(false);
+        getActionBar().setTitle(R.string.app_name);
 
         FrameLayout rootLayout = (FrameLayout) findViewById(R.id.root_layout);
         rootLayout.setOnClickListener(new View.OnClickListener() {

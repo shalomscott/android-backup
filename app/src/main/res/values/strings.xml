@@ -7,4 +7,7 @@
     <string name="about_author">About Author text</string>
     <string name="about_text">About Text text</string>
     <string name="about_other">About Other text</string>
+    <string name="edit_schedule_file">Edit Schedule File</string>
+    <string name="edit_backup_file">Edit Backup File</string>
+    <string name="backup_now">Backup Now</string>
 </resources>

@@ -3,9 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_edit_backup"
+        android:title="@string/edit_backup_file"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_edit_schedule"
+        android:title="@string/edit_schedule_file"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/action_about"
-        android:icon="@drawable/ic_info_outline_black_24dp"
         android:title="@string/action_about"
-        app:showAsAction="always" />
+        app:showAsAction="never" />
 
 </menu>

@@ -3,5 +3,6 @@
     <color name="colorPrimary">#90CAF9</color>
     <color name="colorSuccess">#A5D6A7</color>
     <color name="colorError">#EF9A9A</color>
+    <color name="colorCancel">#FFE082</color>
     <color name="translucentBackgroundColor">#00000000</color>
 </resources>

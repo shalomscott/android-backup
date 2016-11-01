@@ -1,72 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clickable="true"
-    android:foreground="@android:color/transparent"
-    android:orientation="vertical">
+    android:foreground="@android:color/transparent">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/activity_horizontal_margin"
         android:clickable="true">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
 
             <Toolbar
                 android:id="@+id/toolbar"
+                style="@style/Base.ThemeOverlay.AppCompat.Dark"
                 android:layout_width="match_parent"
                 android:layout_height="?android:actionBarSize"
-                android:layout_marginEnd="12dp"
-                android:contentInsetStart="24dp">
-
-                <ImageView
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_marginEnd="12dp"
-                    android:scaleType="centerInside" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/app_name"
-                    android:textAppearance="@android:style/TextAppearance.Material.Medium" />
-
-            </Toolbar>
+                android:layout_marginBottom="8dp" />
 
             <Button
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="runBackup"
-                android:text="Run Backup" />
-
-            <!--TODO: make string resources-->
-
-            <Button
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Set Schedule" />
-
-            <Button
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:onClick="sync"
-                android:text="Sync" />
+                android:text="@string/backup_now" />
 
         </LinearLayout>
 

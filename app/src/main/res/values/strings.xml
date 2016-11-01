@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Android Backup</string>
+    <string name="google_drive_account">Google Drive Account</string>
+    <string name="write_permission">Write Permission</string>
+    <string name="schedule_backup">Schedule Backup</string>
+    <string name="action_about">About</string>
+    <string name="about_author">About Author text</string>
+    <string name="about_text">About Text text</string>
+    <string name="about_other">About Other text</string>
+</resources>
